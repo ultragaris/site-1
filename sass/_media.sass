@@ -1,0 +1,205 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1300px)
+	.blogHome
+		grid-template-columns: repeat(3, 1fr)
+
+		&__link
+
+			&:nth-child(3)
+				grid-column: 2/3
+				grid-row: 1
+
+			&:nth-child(4)
+				grid-column: 1/2
+				grid-row: 2
+
+//	.buttonCase
+		grid-column: 1/4
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.headerMain
+		&__buttons
+			font-size: 1.4rem
+
+	.buttonCase
+		grid-column: 2/3
+
+		.buttonCase_button
+			grid-column: initial
+
+	.portfolioSection
+		grid-template-columns: repeat(3, 1fr)
+
+		&__item
+			font-size: 1.2rem
+			min-height: 40vh
+
+			&:nth-child(1)
+				grid-column: 1/3
+
+			&:nth-child(4)
+				grid-column: 2/4
+
+			&:nth-child(5)
+				grid-column: 1/3
+				grid-row: initial
+
+			&:nth-child(6)
+				grid-column: initial
+				grid-row: initial
+
+	.sectionOne
+		.container
+			grid-template-columns: initial
+
+			> div
+				padding: 2rem 3%
+
+			&__left
+				border: none
+
+	.formSection
+		button
+			font-size: 1rem
+			padding: 0.73rem .9rem
+
+	.blogHome
+		grid-template-columns: repeat(2, 1fr)
+
+		&__link
+
+			&:nth-child(3)
+				grid-column: 2/2
+
+		.buttonCase
+			grid-column: 1/1
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.headerMain
+		padding: 2rem
+
+		h1
+			font-size: 2.44rem
+
+	.buttonCase
+		&__button
+			font-size: 1.3rem
+
+	.landingSection
+		padding: 0
+
+		h2
+			font-size: 1.5rem
+
+	.blogSection
+		h2
+			margin: 2rem 0 1.6rem
+
+
+	.formSection
+		form
+			grid-template-columns: repeat(2, 1fr)
+
+	.blogHome
+		grid-template-columns: repeat(1, 1fr)
+
+		&__link
+
+			&:nth-child(3)
+				grid-column: initial
+
+			&:nth-child(4)
+				grid-column: initial
+
+		.buttonCase
+			grid-column: initial
+			margin-bottom: 2rem
+
+
+
+@media only screen and (max-width : 600px)
+	.portfolioSection
+		grid-template-columns: 1fr
+
+		&__item
+			min-height: 50vh
+
+			&:nth-child(1)
+				grid-column: initial
+
+			&:nth-child(4)
+				grid-column: initial
+
+			&:nth-child(5)
+				grid-column: initial
+
+		.buttonCase
+			grid-column: 1/2
+
+	.headerMain__buttons
+		grid-template-columns: repeat(1,1fr)
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.formSection
+		form
+			grid-template-columns: repeat(1, 1fr)
+
+	.headerMain
+		h1
+			font-size: 1.71rem;
+
+	.homeFooter
+		padding: 2rem 0
+
+		&__copy
+			margin-top: 0.44rem
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
